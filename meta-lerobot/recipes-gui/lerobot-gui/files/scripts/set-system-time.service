@@ -1,0 +1,12 @@
+[Unit]
+Description=Set initial system time
+After=local-fs.target
+Before=lerobot-gui.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/date -s "2026-08-01 00:00:00 UTC"
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

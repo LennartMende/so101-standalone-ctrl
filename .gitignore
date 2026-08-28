@@ -1,0 +1,28 @@
+.vscode/
+
+.venv
+
+__pycache__/
+
+mqtt/__pycache__/
+
+springboot/target/
+
+venv/
+
+# Zertifikate ignorieren
+certs/*
+
+# aber Skripte und Konfigurationen behalten
+!certs/*.sh
+!certs/*.conf
+!certs/*.cnf
+
+# verteilte Zertifikate ignorieren
+mosquitto/certs
+stm32/certs
+lerobot/certs
+stm32/lerobot/certs
+
+mosquitto/data/
+mosquitto/log/
